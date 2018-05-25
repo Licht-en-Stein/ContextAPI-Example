@@ -7,7 +7,6 @@ class Children3 extends Component {
       <div className="App">
         <h1>Children 3</h1>
         <p>{this.props.toChildren3}</p>
-        <p>{this.props.contextToChildren3}</p>
         <p>------------------------</p>
         <Children4
         toChildren4={this.props.toChildren4}
