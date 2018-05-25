@@ -6,9 +6,9 @@ const StoreObject = {
   contextToChildren3: 'I am the parent sending something via ContextAPI to children3',
   contextToChildren4: 'I am the parent sending something via ContextAPI to children4',
 }
-
+console.table(StoreObject)
 export const Store = React.createContext({
-  store: StoreObject ,
-  updateUserData: data => {StoreObject .userInfo = data; console.log(StoreObject)},
+  nice: StoreObject ,
+  updateUserData: data => {StoreObject .userInfo = data; console.table(StoreObject)},
 });
 

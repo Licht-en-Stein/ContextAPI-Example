@@ -5,6 +5,7 @@ import Children2 from './Children2'
 
 class Children1 extends Component {
   render() {
+    console.log('RENDER CHILDREN 1')
     return (
       <div className="App">
         <h1>Children 1</h1>
@@ -15,7 +16,7 @@ class Children1 extends Component {
                       toChildren2={this.props.toChildren2}
                       toChildren3={this.props.toChildren3}
                       toChildren4={this.props.toChildren4}
-                      contextToChildren2={data.store.contextToChildren2}
+                      contextToChildren2={data.nice.contextToChildren2}
                     />)}
         </Store.Consumer>
       </div>

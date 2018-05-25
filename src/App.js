@@ -5,7 +5,6 @@ import Children1 from './components/Children1'
 
 class App extends Component {
   state = {
-    parentState: true,
     toChildren1: 'I am the parent sending something to children1',
     toChildren2: 'I am the parent sending something to children2',
     toChildren3: 'I am the parent sending something to children3',
@@ -31,3 +30,8 @@ class App extends Component {
 }
 
 export default App;
+
+export const Store = React.createContext({
+  store: this.state,
+  updateUserData: data => {this.state.userInfo = data},
+});
